@@ -21,13 +21,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        title = "RxSwift Operators"
     }
 
 
 }
 
 extension ViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let navigationController = navigationController
+        let selectedOperator = OperatorData.array[indexPath.row]
+        let detailStoryboard = UIStoryboard.init(name: "DetailView", bundle: nil)
+        guard let detailVC = detailStoryboard.instantiateInitialViewController() as? DetailViewController else {
+            return
+        }
+        detailVC._operator = selectedOperator
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
 extension ViewController: UITableViewDataSource {
