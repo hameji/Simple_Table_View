@@ -20,3 +20,10 @@ enum OperatorType {
     case connectable
     case convert
 }
+
+struct Operator {
+    let name: String
+    let type: OperatorType
+    let urlString: String
+}
+
