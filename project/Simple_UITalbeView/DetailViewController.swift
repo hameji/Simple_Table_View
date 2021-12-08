@@ -16,9 +16,12 @@ class DetailViewController: UIViewController {
         }
     }
     
+    var _operator: Operator!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print(_operator)
     }
 
 }
