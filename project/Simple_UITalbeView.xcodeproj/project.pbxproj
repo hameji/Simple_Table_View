@@ -13,6 +13,8 @@
 		63B508B227605EFA005E53C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B508B027605EFA005E53C3 /* Main.storyboard */; };
 		63B508B427605EFD005E53C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B508B327605EFD005E53C3 /* Assets.xcassets */; };
 		63B508B727605EFD005E53C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B508B527605EFD005E53C3 /* LaunchScreen.storyboard */; };
+		63B508C727606CA7005E53C3 /* OperatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508C527606CA7005E53C3 /* OperatorCell.swift */; };
+		63B508C827606CA7005E53C3 /* OperatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B508C627606CA7005E53C3 /* OperatorCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		63B508B327605EFD005E53C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63B508B627605EFD005E53C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63B508B827605EFD005E53C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B508C527606CA7005E53C3 /* OperatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorCell.swift; sourceTree = "<group>"; };
+		63B508C627606CA7005E53C3 /* OperatorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperatorCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				63B508AC27605EFA005E53C3 /* SceneDelegate.swift */,
 				63B508AE27605EFA005E53C3 /* ViewController.swift */,
 				63B508B027605EFA005E53C3 /* Main.storyboard */,
+				63B508C527606CA7005E53C3 /* OperatorCell.swift */,
+				63B508C627606CA7005E53C3 /* OperatorCell.xib */,
 				63B508B327605EFD005E53C3 /* Assets.xcassets */,
 				63B508B527605EFD005E53C3 /* LaunchScreen.storyboard */,
 				63B508B827605EFD005E53C3 /* Info.plist */,
@@ -125,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B508B727605EFD005E53C3 /* LaunchScreen.storyboard in Resources */,
+				63B508C827606CA7005E53C3 /* OperatorCell.xib in Resources */,
 				63B508B427605EFD005E53C3 /* Assets.xcassets in Resources */,
 				63B508B227605EFA005E53C3 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B508AF27605EFA005E53C3 /* ViewController.swift in Sources */,
+				63B508C727606CA7005E53C3 /* OperatorCell.swift in Sources */,
 				63B508AB27605EFA005E53C3 /* AppDelegate.swift in Sources */,
 				63B508AD27605EFA005E53C3 /* SceneDelegate.swift in Sources */,
 			);
