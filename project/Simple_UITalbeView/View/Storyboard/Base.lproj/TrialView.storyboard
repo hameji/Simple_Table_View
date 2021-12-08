@@ -50,7 +50,7 @@
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHD-Fl-Edr">
                                                                                 <rect key="frame" x="0.0" y="171.5" width="414" height="85.5"/>
-                                                                                <state key="normal" title="通常問題"/>
+                                                                                <state key="normal" title="文章問題"/>
                                                                             </button>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAk-2i-QPl">
                                                                                 <rect key="frame" x="0.0" y="257" width="414" height="85.5"/>
@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="1000.0000000000001" y="30.803571428571427"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--ResultView-->
         <scene sceneID="ChS-bt-mSW">
             <objects>
-                <viewControllerPlaceholder id="NfN-hs-s1s" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ResultView" id="NfN-hs-s1s" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tFh-ZL-if6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1660.144927536232" y="30.803571428571427"/>
