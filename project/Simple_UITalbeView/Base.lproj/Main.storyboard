@@ -33,11 +33,20 @@
                     <navigationItem key="navigationItem" id="EQ2-BL-XOF"/>
                     <connections>
                         <outlet property="tableView" destination="iFx-hx-DYl" id="xbe-P4-sbR"/>
+                        <segue destination="wCd-Fr-PmO" kind="showDetail" id="v0k-gj-V6V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="83.705357142857139"/>
+        </scene>
+        <!--DetailView-->
+        <scene sceneID="kQL-Da-l60">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailView" id="wCd-Fr-PmO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLd-8m-mXw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1654" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DcD-x9-dEv">
