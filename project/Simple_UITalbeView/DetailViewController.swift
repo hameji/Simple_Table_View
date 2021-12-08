@@ -21,6 +21,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        title = _operator.name
         guard let url = URL(string: _operator.urlString) else {
             return
         }
