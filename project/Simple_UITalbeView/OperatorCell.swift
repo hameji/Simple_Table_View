@@ -15,6 +15,10 @@ class OperatorCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func bind(data: Operator) {
+        nameLabel.text = data.name
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
