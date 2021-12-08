@@ -50,7 +50,7 @@
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHD-Fl-Edr">
                                                                                 <rect key="frame" x="0.0" y="171.5" width="414" height="85.5"/>
-                                                                                <state key="normal" title="通常問題"/>
+                                                                                <state key="normal" title="文章問題"/>
                                                                             </button>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAk-2i-QPl">
                                                                                 <rect key="frame" x="0.0" y="257" width="414" height="85.5"/>
