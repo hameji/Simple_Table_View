@@ -18,6 +18,8 @@ class OperatorCell: UITableViewCell {
     
     func bind(data: Operator) {
         nameLabel.text = data.name
+        nameLabel.textColor = data.swiftCompatible ? .black : .gray
+        accessoryType = data.swiftCompatible ? .disclosureIndicator : .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
