@@ -37,6 +37,7 @@ extension ListViewController: UITableViewDelegate {
             return
         }
         detailVC._operator = selectedOperator
+        self.tableView.deselectRow(at: indexPath, animated: false)
         navigationController?.pushViewController(detailVC, animated: true)
     }
 }
