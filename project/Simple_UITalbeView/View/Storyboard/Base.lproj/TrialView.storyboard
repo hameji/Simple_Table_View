@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="1000.0000000000001" y="30.803571428571427"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--ResultView-->
         <scene sceneID="ChS-bt-mSW">
             <objects>
-                <viewControllerPlaceholder id="NfN-hs-s1s" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ResultView" id="NfN-hs-s1s" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tFh-ZL-if6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1660.144927536232" y="30.803571428571427"/>
