@@ -21,7 +21,11 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print(_operator)
+        guard let url = URL(string: _operator.urlString) else {
+            return
+        }
+        let request = URLRequest(url: url)
+        webView.load(request)
     }
 
 }
