@@ -27,7 +27,7 @@ class ListViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDelegate {
+extension ListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let navigationController = navigationController
         let selectedOperator = OperatorData.array[indexPath.row]
@@ -40,7 +40,7 @@ extension ViewController: UITableViewDelegate {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return OperatorData.array.count
     }
