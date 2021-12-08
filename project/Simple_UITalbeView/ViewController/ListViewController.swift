@@ -29,10 +29,11 @@ class ListViewController: UIViewController {
 
 extension ListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let navigationController = navigationController
-        let selectedOperator = OperatorData.array[indexPath.row]
         let detailStoryboard = UIStoryboard.init(name: "DetailView", bundle: nil)
-        guard let detailVC = detailStoryboard.instantiateInitialViewController() as? DetailViewController else {
+        let selectedOperator = OperatorData.array.filter({ $0.type.rawValue == indexPath.section })[indexPath.row]
+        guard let detailVC = detailStoryboard.instantiateInitialViewController() as? DetailViewController,
+              selectedOperator.swiftCompatible else {
+            self.tableView.deselectRow(at: indexPath, animated: true)
             return
         }
         detailVC._operator = selectedOperator
