@@ -47,6 +47,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63020EE827608F070025B7DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63B508C927607113005E53C3 /* OperatorData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63020EE927608F4D0025B7DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63020EEC27608FB20025B7DD /* Storyboard */,
+				63020EEA27608F550025B7DD /* CustomCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63020EEA27608F550025B7DD /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				63B508C527606CA7005E53C3 /* OperatorCell.swift */,
+				63B508C627606CA7005E53C3 /* OperatorCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		63020EEB27608FA80025B7DD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63B508AE27605EFA005E53C3 /* ViewController.swift */,
+				63B508CB27608071005E53C3 /* DetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		63020EEC27608FB20025B7DD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				63B508B527605EFD005E53C3 /* LaunchScreen.storyboard */,
+				63B508B027605EFA005E53C3 /* Main.storyboard */,
+				63B508CD27608096005E53C3 /* DetailView.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		63B5089E27605EFA005E53C3 = {
 			isa = PBXGroup;
 			children = (
@@ -67,16 +112,11 @@
 			isa = PBXGroup;
 			children = (
 				63B508AA27605EFA005E53C3 /* AppDelegate.swift */,
-				63B508C927607113005E53C3 /* OperatorData.swift */,
 				63B508AC27605EFA005E53C3 /* SceneDelegate.swift */,
-				63B508AE27605EFA005E53C3 /* ViewController.swift */,
-				63B508B027605EFA005E53C3 /* Main.storyboard */,
-				63B508CB27608071005E53C3 /* DetailViewController.swift */,
-				63B508CD27608096005E53C3 /* DetailView.storyboard */,
-				63B508C527606CA7005E53C3 /* OperatorCell.swift */,
-				63B508C627606CA7005E53C3 /* OperatorCell.xib */,
+				63020EE827608F070025B7DD /* Model */,
+				63020EEB27608FA80025B7DD /* ViewController */,
+				63020EE927608F4D0025B7DD /* View */,
 				63B508B327605EFD005E53C3 /* Assets.xcassets */,
-				63B508B527605EFD005E53C3 /* LaunchScreen.storyboard */,
 				63B508B827605EFD005E53C3 /* Info.plist */,
 			);
 			path = Simple_UITalbeView;
