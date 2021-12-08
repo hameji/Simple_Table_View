@@ -41,15 +41,27 @@ extension ListViewController: UITableViewDelegate {
 }
 
 extension ListViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return OperatorType.allCases.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        guard let operatorType = OperatorType.init(rawValue: section) else {
+            return nil
+        }
+        let count = OperatorData.array.filter({ $0.type.rawValue == section }).count
+        return operatorType.title + " (\(count))"
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return OperatorData.array.count
+        return OperatorData.array.filter({ $0.type.rawValue == section }).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "OperatorCell", for: indexPath) as? OperatorCell else {
             return UITableViewCell()
         }
-        let data = OperatorData.array[indexPath.row]
+        let data = OperatorData.array.filter({ $0.type.rawValue == indexPath.section})[indexPath.row]
         cell.bind(data: data)
         return cell
     }
