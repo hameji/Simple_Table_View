@@ -25,6 +25,9 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var operatorImageView: UIImageView!
     @IBOutlet weak var resultImageView: UIImageView!
     
+    @IBOutlet weak var answerStack: UIStackView!
+    @IBOutlet weak var answerLabel: UILabel!
+    
     var operators = CreatingObservables.array
     
     override func viewDidLoad() {
@@ -40,6 +43,8 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func operatorButtonPressed(_ sender: Any) {
+    }
+    @IBAction func nextQuizButtonPressed(_ sender: Any) {
     }
     
     private func setQuestion(quizOperator: Operator) {
