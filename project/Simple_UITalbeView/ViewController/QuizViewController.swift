@@ -19,28 +19,59 @@ class QuizViewController: UIViewController {
 
     @IBOutlet weak var stream1ImageView: UIImageView!
     @IBOutlet weak var stream2ImageView: UIImageView!
+    
+    @IBOutlet weak var operatorButton: UIButton!
+    
     @IBOutlet weak var operatorImageView: UIImageView!
     @IBOutlet weak var resultImageView: UIImageView!
     
+    @IBOutlet weak var answerStack: UIStackView!
+    @IBOutlet weak var answerLabel: UILabel!
+    
     var operators = CreatingObservables.array
+    var currentOperator:Operator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
         title = "マーブルダイアグラム問題"
-        guard let quizOperator = operators.randomElement(),
-              let selectedIndex = operators.firstIndex(where: { $0.name == quizOperator.name })
-        else { return }
-        operators.remove(at: selectedIndex)
-        setQuestion(quizOperator: quizOperator)
+        setOperator()
+        setQuestion()
     }
     
-    private func setQuestion(quizOperator: Operator) {
+    @IBAction func operatorButtonPressed(_ sender: Any) {
+        showAnswer()
+    }
+    
+    private func showAnswer() {
+        answerStack.isHidden = false
+        answerLabel.text = currentOperator?.name
+    }
+    
+    @IBAction func nextQuizButtonPressed(_ sender: Any) {
+        answerStack.isHidden = true
+        setOperator()
+        setQuestion()
+    }
+    
+    private func setOperator() {
+        guard let quizOperator = operators.randomElement(),
+              let selectedIndex = operators.firstIndex(where: { $0.name == quizOperator.name }) else { return }
+        currentOperator = quizOperator
+        operators.remove(at: selectedIndex)
+    }
+    
+    private func setProgress() {
         let total = CreatingObservables.array.count
         let current = total - operators.count
         quizProgressView.progress = Float(Float(current)/Float(total))
         progressLabel.text = "\(current) / \(total)"
+    }
+    
+    private func setQuestion() {
+        answerStack.isHidden = true
+        guard let quizOperator = currentOperator else { return }
         if let stream1 = quizOperator.stream1 {
             stream1ImageView.image = UIImage(named: stream1)
         }
@@ -48,7 +79,7 @@ class QuizViewController: UIViewController {
             stream2ImageView.image = UIImage(named: stream2)
         }
         if let result = quizOperator.result {
-            operatorImageView.image = UIImage(named: "operator_x.png")
+            operatorImageView.isHidden = true
             resultImageView.image = UIImage(named: result)
         }
 
@@ -57,5 +88,4 @@ class QuizViewController: UIViewController {
         operatorView.isHidden = quizOperator.result == nil
         resultView.isHidden = quizOperator.result == nil
     }
-
 }
