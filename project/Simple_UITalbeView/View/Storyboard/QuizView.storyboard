@@ -124,6 +124,12 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="R1a-bp-l6J" secondAttribute="bottom" id="qzI-vm-gHK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="operatorImageView" destination="OIr-Ob-pAz" id="OcQ-wN-NXx"/>
+                        <outlet property="resultImageView" destination="NSC-ut-mWF" id="T8L-ZG-pNh"/>
+                        <outlet property="stream1ImageView" destination="g10-9b-Kp3" id="4U7-Cd-LFi"/>
+                        <outlet property="stream2ImageView" destination="kfa-EO-WcC" id="MOP-ND-Uhb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
