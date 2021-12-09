@@ -10,9 +10,7 @@ import Foundation
 struct Operator {
     let name: String
     let type: OperatorType
-    let stream1: String?
-    let stream2: String?
-    let result: String?
+    let images: DiagramImages
     let swiftCompatible: Bool
     let urlString: String
 }
