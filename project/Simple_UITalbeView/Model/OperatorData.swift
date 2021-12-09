@@ -17,6 +17,13 @@ struct Operator {
     let urlString: String
 }
 
+struct DiagramImages {
+    let stream1: Bool
+    let stream2: Bool
+    let opreator: Bool
+    let result: Bool
+}
+
 struct CreatingObservables {
     static let array = [
         Operator(name: "Create", type: .creating,
