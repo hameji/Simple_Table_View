@@ -25,7 +25,6 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var resultImageView: UIImageView!
     
     
-    var operators = CreatingObservables.array
     @IBOutlet weak var showView: UIView!
     @IBOutlet weak var showButton: UIButton!
     
@@ -33,6 +32,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
 
+    var operators:[Operator] = Operators.array.filter({ $0.swiftCompatible })
     var currentOperator:Operator?
     
     override func viewDidLoad() {
@@ -41,6 +41,7 @@ class QuizViewController: UIViewController {
 
         title = "マーブルダイアグラム問題"
         setOperator()
+        setProgress()
         setQuestion()
     }
     
@@ -49,13 +50,16 @@ class QuizViewController: UIViewController {
     }
     
     private func showAnswer() {
-        answerStack.isHidden = false
+        showView.isHidden = true
+        answerView.isHidden = false
         answerLabel.text = currentOperator?.name
     }
     
     @IBAction func nextQuizButtonPressed(_ sender: Any) {
-        answerStack.isHidden = true
+        showView.isHidden = false
+        answerView.isHidden = true
         setOperator()
+        setProgress()
         setQuestion()
     }
     
@@ -67,14 +71,14 @@ class QuizViewController: UIViewController {
     }
     
     private func setProgress() {
-        let total = CreatingObservables.array.count
+        let total = Operators.array.filter({ $0.swiftCompatible }).count
         let current = total - operators.count
         quizProgressView.progress = Float(Float(current)/Float(total))
         progressLabel.text = "\(current) / \(total)"
     }
     
     private func setQuestion() {
-        answerStack.isHidden = true
+        answerView.isHidden = true
         print(currentOperator?.name.lowercased() ?? "nil")
         guard let quizOperator = currentOperator else { return }
         stream1ImageView.image = quizOperator.images.stream1 ? UIImage(named: "stream1_" + quizOperator.name.lowercased() + ".png") : nil
