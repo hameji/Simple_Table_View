@@ -15,6 +15,10 @@ struct Operator {
     let urlString: String
 }
 
+struct AppResources {
+    static let operatorsRef = "http://reactivex.io/documentation/operators/"
+}
+
 struct DiagramImages {
     let stream1: Bool
     let stream2: Bool
