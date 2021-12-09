@@ -9,6 +9,11 @@ import UIKit
 
 class QuizViewController: UIViewController {
     
+    @IBOutlet weak var stream1View: UIView!
+    @IBOutlet weak var stream2View: UIView!
+    @IBOutlet weak var operatorView: UIView!
+    @IBOutlet weak var resultView: UIView!
+
     @IBOutlet weak var stream1ImageView: UIImageView!
     @IBOutlet weak var stream2ImageView: UIImageView!
     @IBOutlet weak var operatorImageView: UIImageView!
@@ -33,6 +38,11 @@ class QuizViewController: UIViewController {
         stream2ImageView.isHidden = true
         operatorImageView.isHidden = false
         resultImageView.isHidden = false
+        
+        stream1View.isHidden = false
+        stream2View.isHidden = true
+        operatorView.isHidden = false
+        resultView.isHidden = false
     }
 
 }
