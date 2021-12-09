@@ -9,6 +9,9 @@ import UIKit
 
 class QuizViewController: UIViewController {
     
+    @IBOutlet weak var quizProgressView: UIProgressView!
+    @IBOutlet weak var progressLabel: UILabel!
+    
     @IBOutlet weak var stream1View: UIView!
     @IBOutlet weak var stream2View: UIView!
     @IBOutlet weak var operatorView: UIView!
