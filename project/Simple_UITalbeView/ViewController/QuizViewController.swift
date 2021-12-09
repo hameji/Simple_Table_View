@@ -9,6 +9,9 @@ import UIKit
 
 class QuizViewController: UIViewController {
     
+    @IBOutlet weak var quizProgressView: UIProgressView!
+    @IBOutlet weak var progressLabel: UILabel!
+    
     @IBOutlet weak var stream1View: UIView!
     @IBOutlet weak var stream2View: UIView!
     @IBOutlet weak var operatorView: UIView!
@@ -19,29 +22,40 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var operatorImageView: UIImageView!
     @IBOutlet weak var resultImageView: UIImageView!
     
+    var operators = CreatingObservables.array
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        let mockOperator = Operator(name: "", type: .creating, stream1: nil, stream2: nil, result: nil, swiftCompatible: true, urlString: "")
-        setQuestion(operator: mockOperator)
+        title = "マーブルダイアグラム問題"
+        guard let quizOperator = operators.randomElement(),
+              let selectedIndex = operators.firstIndex(where: { $0.name == quizOperator.name })
+        else { return }
+        operators.remove(at: selectedIndex)
+        setQuestion(quizOperator: quizOperator)
     }
     
-    private func setQuestion(operator: Operator) {
-        stream1ImageView.image = UIImage(named: "stream1_from.png")
-        stream2ImageView.image = UIImage(named: "")
-        operatorImageView.image = UIImage(named: "operator_x.png")
-        resultImageView.image = UIImage(named: "result_from.png")
+    private func setQuestion(quizOperator: Operator) {
+        let total = CreatingObservables.array.count
+        let current = total - operators.count
+        quizProgressView.progress = Float(Float(current)/Float(total))
+        progressLabel.text = "\(current) / \(total)"
+        if let stream1 = quizOperator.stream1 {
+            stream1ImageView.image = UIImage(named: stream1)
+        }
+        if let stream2 = quizOperator.stream2 {
+            stream2ImageView.image = UIImage(named: stream2)
+        }
+        if let result = quizOperator.result {
+            operatorImageView.image = UIImage(named: "operator_x.png")
+            resultImageView.image = UIImage(named: result)
+        }
 
-        stream1ImageView.isHidden = false
-        stream2ImageView.isHidden = true
-        operatorImageView.isHidden = false
-        resultImageView.isHidden = false
-        
-        stream1View.isHidden = false
-        stream2View.isHidden = true
-        operatorView.isHidden = false
-        resultView.isHidden = false
+        stream1View.isHidden = quizOperator.stream1 == nil
+        stream2View.isHidden = quizOperator.stream2 == nil
+        operatorView.isHidden = quizOperator.result == nil
+        resultView.isHidden = quizOperator.result == nil
     }
 
 }

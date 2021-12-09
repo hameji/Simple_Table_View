@@ -17,7 +17,7 @@ struct Operator {
     let urlString: String
 }
 
-struct CreatingObserbles {
+struct CreatingObservables {
     static let array = [
         Operator(name: "Create", type: .creating,
                  stream1: "stream1_create", stream2: nil, result: nil,
@@ -293,7 +293,7 @@ struct ConvertObservables {
 
 struct Operators {
     static let array =
-        CreatingObserbles.array
+        CreatingObservables.array
         + TransformingObservables.array
         + FilteringObservables.array
         + CombiningObservables.array
