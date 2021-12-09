@@ -29,7 +29,7 @@ class ListViewController: UIViewController {
 extension ListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailStoryboard = UIStoryboard.init(name: "DetailView", bundle: nil)
-        let selectedOperator = OperatorData.array.filter({ $0.type.rawValue == indexPath.section })[indexPath.row]
+        let selectedOperator = Operators.array.filter({ $0.type.rawValue == indexPath.section })[indexPath.row]
         guard let detailVC = detailStoryboard.instantiateInitialViewController() as? DetailViewController,
               selectedOperator.swiftCompatible else {
             self.tableView.deselectRow(at: indexPath, animated: true)
