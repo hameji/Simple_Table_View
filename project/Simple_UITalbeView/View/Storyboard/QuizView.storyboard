@@ -41,12 +41,12 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GKW-7h-3or">
-                                                                        <rect key="frame" x="47.5" y="10" width="268.5" height="4"/>
+                                                                        <rect key="frame" x="47.5" y="10" width="258.5" height="4"/>
                                                                     </progressView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 / 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gO-1S-8op">
-                                                                        <rect key="frame" x="324" y="2" width="50" height="20.5"/>
+                                                                        <rect key="frame" x="314" y="2" width="60" height="20.5"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" constant="50" id="BxZ-Jq-QrF"/>
+                                                                            <constraint firstAttribute="width" constant="60" id="BxZ-Jq-QrF"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -138,8 +138,8 @@
                                                 <rect key="frame" x="0.0" y="584.5" width="414" height="116.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VG-0o-OQ0">
-                                                        <rect key="frame" x="169" y="43" width="76" height="30"/>
-                                                        <state key="normal" title="Operator X"/>
+                                                        <rect key="frame" x="153" y="43" width="108" height="30"/>
+                                                        <state key="normal" title="答えを表示する"/>
                                                         <connections>
                                                             <action selector="operatorButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vHe-sZ-SrG"/>
                                                         </connections>
