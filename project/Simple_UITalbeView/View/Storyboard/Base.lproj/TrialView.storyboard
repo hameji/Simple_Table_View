@@ -109,6 +109,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EGD-HS-lWm"/>
+                    <connections>
+                        <segue destination="h7l-qR-I1z" kind="showDetail" id="Q0k-JF-pdC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,7 +123,15 @@
                 <viewControllerPlaceholder storyboardName="ResultView" id="NfN-hs-s1s" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tFh-ZL-if6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1660.144927536232" y="30.803571428571427"/>
+            <point key="canvasLocation" x="1643" y="-67"/>
+        </scene>
+        <!--QuizView-->
+        <scene sceneID="JJ1-13-DIp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QuizView" id="h7l-qR-I1z" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3u-Jb-6YE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="48"/>
         </scene>
         <!--問題-->
         <scene sceneID="Q5a-9F-9mT">
