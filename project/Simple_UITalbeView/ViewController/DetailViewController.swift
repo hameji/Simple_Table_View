@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         title = _operator.name
-        guard let url = URL(string: _operator.urlString) else {
+        guard let url = URL(string: AppResources.operatorsRef + _operator.urlString) else {
             return
         }
         let request = URLRequest(url: url)
