@@ -28,11 +28,19 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        guard let quizOperator = operators.randomElement() else { return }
+        title = "マーブルダイアグラム問題"
+        guard let quizOperator = operators.randomElement(),
+              let selectedIndex = operators.firstIndex(where: { $0.name == quizOperator.name })
+        else { return }
+        operators.remove(at: selectedIndex)
         setQuestion(quizOperator: quizOperator)
     }
     
     private func setQuestion(quizOperator: Operator) {
+        let total = CreatingObservables.array.count
+        let current = total - operators.count
+        quizProgressView.progress = Float(Float(current)/Float(total))
+        progressLabel.text = "\(current) / \(total)"
         if let stream1 = quizOperator.stream1 {
             stream1ImageView.image = UIImage(named: stream1)
         }
