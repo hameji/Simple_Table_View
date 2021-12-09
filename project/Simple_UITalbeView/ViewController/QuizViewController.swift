@@ -20,13 +20,10 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var stream1ImageView: UIImageView!
     @IBOutlet weak var stream2ImageView: UIImageView!
     
-    @IBOutlet weak var operatorButton: UIButton!
     
     @IBOutlet weak var operatorImageView: UIImageView!
     @IBOutlet weak var resultImageView: UIImageView!
     
-    @IBOutlet weak var answerStack: UIStackView!
-    @IBOutlet weak var answerLabel: UILabel!
     
     var operators = CreatingObservables.array
     var currentOperator:Operator?
