@@ -37,6 +37,7 @@ class QuizViewController: UIViewController {
             stream2ImageView.image = UIImage(named: stream2)
         }
         if let result = quizOperator.result {
+            operatorImageView.image = UIImage(named: "operator_x.png")
             resultImageView.image = UIImage(named: result)
         }
 
