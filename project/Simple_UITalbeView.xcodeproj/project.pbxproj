@@ -13,6 +13,7 @@
 		63020F052760A5EA0025B7DD /* ResultView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63020F042760A5EA0025B7DD /* ResultView.storyboard */; };
 		63020F072760A6070025B7DD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63020F062760A6070025B7DD /* ResultViewController.swift */; };
 		63020F092760AC9E0025B7DD /* OperatorListViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63020F082760AC9E0025B7DD /* OperatorListViewStruct.swift */; };
+		63020F0C276134410025B7DD /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63020F0B276134410025B7DD /* Extension+UITableView.swift */; };
 		63B508AB27605EFA005E53C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508AA27605EFA005E53C3 /* AppDelegate.swift */; };
 		63B508AD27605EFA005E53C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508AC27605EFA005E53C3 /* SceneDelegate.swift */; };
 		63B508AF27605EFA005E53C3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508AE27605EFA005E53C3 /* ListViewController.swift */; };
@@ -33,6 +34,7 @@
 		63020F042760A5EA0025B7DD /* ResultView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultView.storyboard; sourceTree = "<group>"; };
 		63020F062760A6070025B7DD /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		63020F082760AC9E0025B7DD /* OperatorListViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorListViewStruct.swift; sourceTree = "<group>"; };
+		63020F0B276134410025B7DD /* Extension+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
 		63B508A727605EFA005E53C3 /* Simple_UITalbeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simple_UITalbeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B508AA27605EFA005E53C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63B508AC27605EFA005E53C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		63020EE827608F070025B7DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63020F0A2761341F0025B7DD /* Extension */,
 				63B508C927607113005E53C3 /* OperatorData.swift */,
 				63020F082760AC9E0025B7DD /* OperatorListViewStruct.swift */,
 			);
@@ -116,6 +119,14 @@
 				63020F042760A5EA0025B7DD /* ResultView.storyboard */,
 			);
 			path = ContainerView;
+			sourceTree = "<group>";
+		};
+		63020F0A2761341F0025B7DD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63020F0B276134410025B7DD /* Extension+UITableView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		63B5089E27605EFA005E53C3 = {
@@ -224,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B508AF27605EFA005E53C3 /* ListViewController.swift in Sources */,
+				63020F0C276134410025B7DD /* Extension+UITableView.swift in Sources */,
 				63B508C727606CA7005E53C3 /* OperatorCell.swift in Sources */,
 				63020EF827609DBC0025B7DD /* TrialViewController.swift in Sources */,
 				63B508CA27607113005E53C3 /* OperatorData.swift in Sources */,
