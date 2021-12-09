@@ -26,6 +26,13 @@ class QuizViewController: UIViewController {
     
     
     var operators = CreatingObservables.array
+    @IBOutlet weak var showView: UIView!
+    @IBOutlet weak var showButton: UIButton!
+    
+    @IBOutlet weak var answerView: UIView!
+    @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+
     var currentOperator:Operator?
     
     override func viewDidLoad() {
