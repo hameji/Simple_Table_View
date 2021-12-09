@@ -71,21 +71,16 @@ class QuizViewController: UIViewController {
     
     private func setQuestion() {
         answerStack.isHidden = true
+        print(currentOperator?.name.lowercased() ?? "nil")
         guard let quizOperator = currentOperator else { return }
-        if let stream1 = quizOperator.stream1 {
-            stream1ImageView.image = UIImage(named: stream1)
-        }
-        if let stream2 = quizOperator.stream2 {
-            stream2ImageView.image = UIImage(named: stream2)
-        }
-        if let result = quizOperator.result {
-            operatorImageView.isHidden = true
-            resultImageView.image = UIImage(named: result)
-        }
-
-        stream1View.isHidden = quizOperator.stream1 == nil
-        stream2View.isHidden = quizOperator.stream2 == nil
-        operatorView.isHidden = quizOperator.result == nil
-        resultView.isHidden = quizOperator.result == nil
+        stream1ImageView.image = quizOperator.images.stream1 ? UIImage(named: "stream1_" + quizOperator.name.lowercased() + ".png") : nil
+        stream2ImageView.image = quizOperator.images.stream2 ? UIImage(named: "stream2_" + quizOperator.name.lowercased() + ".png") : nil
+        operatorImageView.image = quizOperator.images.opreator ? UIImage(named: "operator_x.png") : nil
+        resultImageView.image = quizOperator.images.result ? UIImage(named: "result_" + quizOperator.name.lowercased() + ".png") : nil
+        // 表示
+        stream1View.isHidden = !quizOperator.images.stream1
+        stream2View.isHidden = !quizOperator.images.stream2
+        operatorView.isHidden = !quizOperator.images.result
+        resultView.isHidden = !quizOperator.images.result
     }
 }
