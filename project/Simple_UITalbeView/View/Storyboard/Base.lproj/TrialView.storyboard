@@ -47,6 +47,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxN-Tl-BbC">
                                                                                 <rect key="frame" x="0.0" y="85.5" width="414" height="86"/>
                                                                                 <state key="normal" title="マーブルダイアグラム問題"/>
+                                                                                <connections>
+                                                                                    <action selector="pressedDiagramButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Eaw-Lx-vhv"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHD-Fl-Edr">
                                                                                 <rect key="frame" x="0.0" y="171.5" width="414" height="85.5"/>
