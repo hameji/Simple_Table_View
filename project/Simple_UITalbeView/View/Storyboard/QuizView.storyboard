@@ -169,6 +169,8 @@
                     <connections>
                         <outlet property="operatorImageView" destination="OIr-Ob-pAz" id="OcQ-wN-NXx"/>
                         <outlet property="operatorView" destination="bWR-rF-z6k" id="lM9-9c-Lsq"/>
+                        <outlet property="progressLabel" destination="4gO-1S-8op" id="64U-kc-ku3"/>
+                        <outlet property="quizProgressView" destination="GKW-7h-3or" id="ezI-9G-yJP"/>
                         <outlet property="resultImageView" destination="NSC-ut-mWF" id="T8L-ZG-pNh"/>
                         <outlet property="resultView" destination="qmg-M3-tf7" id="bW5-U0-gsg"/>
                         <outlet property="stream1ImageView" destination="g10-9b-Kp3" id="4U7-Cd-LFi"/>
