@@ -13,8 +13,7 @@ class ListViewController: UIViewController {
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
-            let operatorCell = UINib(nibName: "OperatorCell", bundle: nil)
-            tableView.register(operatorCell, forCellReuseIdentifier: "OperatorCell")
+            tableView.registerXib(name: "OperatorCell")
         }
     }
 
