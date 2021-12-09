@@ -176,6 +176,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="operatorButton" destination="7VG-0o-OQ0" id="Jwm-iw-FW6"/>
                         <outlet property="operatorImageView" destination="OIr-Ob-pAz" id="OcQ-wN-NXx"/>
                         <outlet property="operatorView" destination="bWR-rF-z6k" id="lM9-9c-Lsq"/>
                         <outlet property="progressLabel" destination="4gO-1S-8op" id="64U-kc-ku3"/>

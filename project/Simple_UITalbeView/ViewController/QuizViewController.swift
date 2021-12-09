@@ -19,6 +19,9 @@ class QuizViewController: UIViewController {
 
     @IBOutlet weak var stream1ImageView: UIImageView!
     @IBOutlet weak var stream2ImageView: UIImageView!
+    
+    @IBOutlet weak var operatorButton: UIButton!
+    
     @IBOutlet weak var operatorImageView: UIImageView!
     @IBOutlet weak var resultImageView: UIImageView!
     
@@ -51,7 +54,7 @@ class QuizViewController: UIViewController {
             stream2ImageView.image = UIImage(named: stream2)
         }
         if let result = quizOperator.result {
-            operatorImageView.image = UIImage(named: "operator_x.png")
+            operatorImageView.isHidden = true
             resultImageView.image = UIImage(named: result)
         }
 
