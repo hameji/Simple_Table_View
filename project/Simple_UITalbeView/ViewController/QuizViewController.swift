@@ -19,12 +19,11 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var operatorImageView: UIImageView!
     @IBOutlet weak var resultImageView: UIImageView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        let mockOperator = Operator(name: "", type: .creating, swiftCompatible: true, urlString: "")
+        let mockOperator = Operator(name: "", type: .creating, stream1: nil, stream2: nil, result: nil, swiftCompatible: true, urlString: "")
         setQuestion(operator: mockOperator)
     }
     
