@@ -107,13 +107,22 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWR-rF-z6k">
                                                 <rect key="frame" x="0.0" y="409" width="414" height="136.5"/>
                                                 <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VG-0o-OQ0">
+                                                        <rect key="frame" x="169" y="53" width="76" height="30"/>
+                                                        <state key="normal" title="Operator X"/>
+                                                        <connections>
+                                                            <action selector="operatorButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vHe-sZ-SrG"/>
+                                                        </connections>
+                                                    </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OIr-Ob-pAz">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="136.5"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="7VG-0o-OQ0" firstAttribute="centerX" secondItem="bWR-rF-z6k" secondAttribute="centerX" id="3cb-rS-ePe"/>
                                                     <constraint firstAttribute="bottom" secondItem="OIr-Ob-pAz" secondAttribute="bottom" id="5XQ-Ma-wT8"/>
+                                                    <constraint firstItem="7VG-0o-OQ0" firstAttribute="centerY" secondItem="bWR-rF-z6k" secondAttribute="centerY" id="O7d-MU-vUV"/>
                                                     <constraint firstItem="OIr-Ob-pAz" firstAttribute="top" secondItem="bWR-rF-z6k" secondAttribute="top" id="RF7-AK-ZhY"/>
                                                     <constraint firstAttribute="trailing" secondItem="OIr-Ob-pAz" secondAttribute="trailing" id="U7T-oP-3Pn"/>
                                                     <constraint firstItem="OIr-Ob-pAz" firstAttribute="leading" secondItem="bWR-rF-z6k" secondAttribute="leading" id="tP8-RB-5A7"/>

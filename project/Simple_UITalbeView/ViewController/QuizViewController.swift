@@ -36,6 +36,9 @@ class QuizViewController: UIViewController {
         setQuestion(quizOperator: quizOperator)
     }
     
+    @IBAction func operatorButtonPressed(_ sender: Any) {
+    }
+    
     private func setQuestion(quizOperator: Operator) {
         let total = CreatingObservables.array.count
         let current = total - operators.count
