@@ -13,5 +13,12 @@ class TrialViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func pressedDiagramButton(_ sender: Any) {
+        let quizStoryboard = UIStoryboard.init(name: "QuizView", bundle: nil)
+        guard let quizVC = quizStoryboard.instantiateInitialViewController() as? QuizViewController else {
+            return
+        }
+        navigationController?.pushViewController(quizVC, animated: true)
+    }
 }
