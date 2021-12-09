@@ -19,6 +19,20 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
+        let mockOperator = Operator(name: "", type: .creating, swiftCompatible: true, urlString: "")
+        setQuestion(operator: mockOperator)
+    }
+    
+    private func setQuestion(operator: Operator) {
+        stream1ImageView.image = UIImage(named: "stream1_from.png")
+        stream2ImageView.image = UIImage(named: "")
+        operatorImageView.image = UIImage(named: "operator_x.png")
+        resultImageView.image = UIImage(named: "result_from.png")
+
+        stream1ImageView.isHidden = false
+        stream2ImageView.isHidden = true
+        operatorImageView.isHidden = false
+        resultImageView.isHidden = false
     }
 
 }
