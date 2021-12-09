@@ -14,6 +14,8 @@
 		63020F072760A6070025B7DD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63020F062760A6070025B7DD /* ResultViewController.swift */; };
 		63020F092760AC9E0025B7DD /* OperatorListViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63020F082760AC9E0025B7DD /* OperatorListViewStruct.swift */; };
 		63020F0C276134410025B7DD /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63020F0B276134410025B7DD /* Extension+UITableView.swift */; };
+		63020F122761AD010025B7DD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63020F112761AD010025B7DD /* QuizViewController.swift */; };
+		63020F142761AD3C0025B7DD /* QuizView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63020F132761AD3C0025B7DD /* QuizView.storyboard */; };
 		63B508AB27605EFA005E53C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508AA27605EFA005E53C3 /* AppDelegate.swift */; };
 		63B508AD27605EFA005E53C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508AC27605EFA005E53C3 /* SceneDelegate.swift */; };
 		63B508AF27605EFA005E53C3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508AE27605EFA005E53C3 /* ListViewController.swift */; };
@@ -35,6 +37,8 @@
 		63020F062760A6070025B7DD /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		63020F082760AC9E0025B7DD /* OperatorListViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorListViewStruct.swift; sourceTree = "<group>"; };
 		63020F0B276134410025B7DD /* Extension+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
+		63020F112761AD010025B7DD /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		63020F132761AD3C0025B7DD /* QuizView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizView.storyboard; sourceTree = "<group>"; };
 		63B508A727605EFA005E53C3 /* Simple_UITalbeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simple_UITalbeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B508AA27605EFA005E53C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63B508AC27605EFA005E53C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 				63B508CB27608071005E53C3 /* DetailViewController.swift */,
 				63020EF727609DBC0025B7DD /* TrialViewController.swift */,
 				63020F062760A6070025B7DD /* ResultViewController.swift */,
+				63020F112761AD010025B7DD /* QuizViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 				63020EFC2760A2240025B7DD /* ListView.storyboard */,
 				63B508CD27608096005E53C3 /* DetailView.storyboard */,
 				63020EF427609DA20025B7DD /* TrialView.storyboard */,
+				63020F132761AD3C0025B7DD /* QuizView.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 			files = (
 				63B508B727605EFD005E53C3 /* LaunchScreen.storyboard in Resources */,
 				63020EFE2760A2240025B7DD /* ListView.storyboard in Resources */,
+				63020F142761AD3C0025B7DD /* QuizView.storyboard in Resources */,
 				63B508C827606CA7005E53C3 /* OperatorCell.xib in Resources */,
 				63B508B427605EFD005E53C3 /* Assets.xcassets in Resources */,
 				63B508CE27608096005E53C3 /* DetailView.storyboard in Resources */,
@@ -241,6 +248,7 @@
 				63B508CA27607113005E53C3 /* OperatorData.swift in Sources */,
 				63B508CC27608071005E53C3 /* DetailViewController.swift in Sources */,
 				63020F092760AC9E0025B7DD /* OperatorListViewStruct.swift in Sources */,
+				63020F122761AD010025B7DD /* QuizViewController.swift in Sources */,
 				63020F072760A6070025B7DD /* ResultViewController.swift in Sources */,
 				63B508AB27605EFA005E53C3 /* AppDelegate.swift in Sources */,
 				63B508AD27605EFA005E53C3 /* SceneDelegate.swift in Sources */,
