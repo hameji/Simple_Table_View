@@ -50,19 +50,19 @@ extension ListViewController: UITableViewDataSource {
         guard let operatorType = OperatorType.init(rawValue: section) else {
             return nil
         }
-        let count = OperatorData.array.filter({ $0.type.rawValue == section }).count
+        let count = Operators.array.filter({ $0.type.rawValue == section }).count
         return operatorType.title + " (\(count))"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return OperatorData.array.filter({ $0.type.rawValue == section }).count
+        return Operators.array.filter({ $0.type.rawValue == section }).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "OperatorCell", for: indexPath) as? OperatorCell else {
             return UITableViewCell()
         }
-        let data = OperatorData.array.filter({ $0.type.rawValue == indexPath.section})[indexPath.row]
+        let data = Operators.array.filter({ $0.type.rawValue == indexPath.section})[indexPath.row]
         cell.bind(data: data)
         return cell
     }
