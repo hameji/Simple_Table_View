@@ -74,7 +74,10 @@
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="height" constant="45" id="gHG-ud-fg5"/>
                                                                                         </constraints>
-                                                                                        <state key="normal" title="文章問題"/>
+                                                                                        <state key="normal" title="swift対応オペレーター問題"/>
+                                                                                        <connections>
+                                                                                            <action selector="pressCompatibleButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gtI-M3-IY0"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -146,6 +149,7 @@
                         <outlet property="compatibleButton" destination="IHD-Fl-Edr" id="KxX-RR-sP1"/>
                         <outlet property="diagramButton" destination="VxN-Tl-BbC" id="rN4-ws-H1L"/>
                         <segue destination="h7l-qR-I1z" kind="showDetail" id="Q0k-JF-pdC"/>
+                        <segue destination="fzd-Me-QpM" kind="showDetail" id="pGg-A4-Psi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -167,6 +171,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3u-Jb-6YE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1634" y="48"/>
+        </scene>
+        <!--QuizCompatibleView-->
+        <scene sceneID="PiF-Mc-vs0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QuizCompatibleView" id="fzd-Me-QpM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQj-mH-rhV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1683" y="135"/>
         </scene>
         <!--問題-->
         <scene sceneID="Q5a-9F-9mT">

@@ -30,4 +30,13 @@ class TrialViewController: UIViewController {
         }
         navigationController?.pushViewController(quizVC, animated: true)
     }
+    
+    @IBAction func pressCompatibleButton(_ sender: Any) {
+        let compatibleStoryboard = UIStoryboard.init(name: "QuizCompatibleView", bundle: nil)
+        guard let compatibleVC = compatibleStoryboard.instantiateInitialViewController() as? QuizCompatibleViewController else {
+            return
+        }
+        navigationController?.pushViewController(compatibleVC, animated: true)
+    }
+    
 }
