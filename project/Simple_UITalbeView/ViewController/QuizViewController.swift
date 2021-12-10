@@ -32,7 +32,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
 
-    var operators:[Operator] = Operators.array.filter({ $0.swiftCompatible })
+    var operators:[Operator] = Operators.array.filter({ $0.swiftCompatible && $0.images != nil })
     var currentOperator:Operator?
     
     override func viewDidLoad() {
@@ -79,7 +79,7 @@ class QuizViewController: UIViewController {
     }
     
     private func setProgress() {
-        let total = Operators.array.filter({ $0.swiftCompatible }).count
+        let total = Operators.array.filter({ $0.swiftCompatible && $0.images != nil }).count
         let current = total - operators.count
         quizProgressView.progress = Float(Float(current)/Float(total))
         progressLabel.text = "\(current) / \(total)"
