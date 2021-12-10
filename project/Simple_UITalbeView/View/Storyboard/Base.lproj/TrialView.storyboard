@@ -207,6 +207,7 @@
                         <outlet property="workAroundView" destination="pkz-fA-aIF" id="j7Q-Rn-ig4"/>
                         <segue destination="h7l-qR-I1z" kind="showDetail" id="Q0k-JF-pdC"/>
                         <segue destination="fzd-Me-QpM" kind="showDetail" id="pGg-A4-Psi"/>
+                        <segue destination="TAz-cF-WHg" kind="showDetail" id="dDZ-Rz-hre"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -236,6 +237,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQj-mH-rhV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1683" y="135"/>
+        </scene>
+        <!--QuizFunctionView-->
+        <scene sceneID="3dL-UT-nSj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QuizFunctionView" id="TAz-cF-WHg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QlS-ng-Bct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1670" y="195"/>
         </scene>
         <!--問題-->
         <scene sceneID="Q5a-9F-9mT">
