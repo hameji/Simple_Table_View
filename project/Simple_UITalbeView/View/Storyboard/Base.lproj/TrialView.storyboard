@@ -41,10 +41,10 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="342.5"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyD-xl-d5B">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="85.5"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="68.5"/>
                                                                                 <subviews>
                                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxN-Tl-BbC">
-                                                                                        <rect key="frame" x="40" y="20.5" width="334" height="45"/>
+                                                                                        <rect key="frame" x="40" y="12" width="334" height="45"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="height" constant="45" id="6g9-A9-N8l"/>
                                                                                         </constraints>
@@ -63,10 +63,10 @@
                                                                                 </constraints>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h28-pM-I7E">
-                                                                                <rect key="frame" x="0.0" y="85.5" width="414" height="86"/>
+                                                                                <rect key="frame" x="0.0" y="68.5" width="414" height="68.5"/>
                                                                                 <subviews>
                                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHD-Fl-Edr">
-                                                                                        <rect key="frame" x="40" y="20.5" width="334" height="45"/>
+                                                                                        <rect key="frame" x="40" y="12" width="334" height="45"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="height" constant="45" id="gHG-ud-fg5"/>
                                                                                         </constraints>
@@ -85,10 +85,10 @@
                                                                                 </constraints>
                                                                             </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gno-VU-u8g">
-                                                                                <rect key="frame" x="0.0" y="171.5" width="414" height="85.5"/>
+                                                                                <rect key="frame" x="0.0" y="137" width="414" height="68.5"/>
                                                                                 <subviews>
                                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMP-mg-vYa">
-                                                                                        <rect key="frame" x="40" y="20" width="334" height="45"/>
+                                                                                        <rect key="frame" x="40" y="12" width="334" height="45"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="height" constant="45" id="QQ5-HB-pvq"/>
                                                                                         </constraints>
@@ -103,9 +103,43 @@
                                                                                     <constraint firstItem="nMP-mg-vYa" firstAttribute="centerX" secondItem="Gno-VU-u8g" secondAttribute="centerX" id="a9A-fo-LHe"/>
                                                                                 </constraints>
                                                                             </view>
-                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAk-2i-QPl">
-                                                                                <rect key="frame" x="0.0" y="257" width="414" height="85.5"/>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkz-fA-aIF">
+                                                                                <rect key="frame" x="0.0" y="205.5" width="414" height="68.5"/>
+                                                                                <subviews>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCz-iZ-TrW">
+                                                                                        <rect key="frame" x="40" y="12" width="334" height="45"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="45" id="toV-ga-ZTF"/>
+                                                                                        </constraints>
+                                                                                        <state key="normal" title="非対応オペレーターのworkaround問題"/>
+                                                                                    </button>
+                                                                                </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="XCz-iZ-TrW" firstAttribute="leading" secondItem="pkz-fA-aIF" secondAttribute="leading" constant="40" id="1v4-7b-QFP"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="XCz-iZ-TrW" secondAttribute="trailing" constant="40" id="4Os-5F-GLr"/>
+                                                                                    <constraint firstItem="XCz-iZ-TrW" firstAttribute="centerX" secondItem="pkz-fA-aIF" secondAttribute="centerX" id="fiw-X9-DsE"/>
+                                                                                    <constraint firstItem="XCz-iZ-TrW" firstAttribute="centerY" secondItem="pkz-fA-aIF" secondAttribute="centerY" id="sj8-7y-JpM"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAk-2i-QPl">
+                                                                                <rect key="frame" x="0.0" y="274" width="414" height="68.5"/>
+                                                                                <subviews>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rig-gf-r66">
+                                                                                        <rect key="frame" x="40" y="12" width="334" height="45"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="45" id="55Z-m4-Epd"/>
+                                                                                        </constraints>
+                                                                                        <state key="normal" title="実践問題"/>
+                                                                                    </button>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="trailing" secondItem="rig-gf-r66" secondAttribute="trailing" constant="40" id="KjW-pZ-0SX"/>
+                                                                                    <constraint firstItem="rig-gf-r66" firstAttribute="leading" secondItem="GAk-2i-QPl" secondAttribute="leading" constant="40" id="LUg-eV-hjn"/>
+                                                                                    <constraint firstItem="rig-gf-r66" firstAttribute="centerY" secondItem="GAk-2i-QPl" secondAttribute="centerY" id="NFW-dK-VTQ"/>
+                                                                                    <constraint firstItem="rig-gf-r66" firstAttribute="centerX" secondItem="GAk-2i-QPl" secondAttribute="centerX" id="dKw-dP-Rg5"/>
+                                                                                </constraints>
                                                                             </view>
                                                                         </subviews>
                                                                     </stackView>
