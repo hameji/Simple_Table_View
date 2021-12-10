@@ -17,6 +17,7 @@
 		63020F122761AD010025B7DD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63020F112761AD010025B7DD /* QuizViewController.swift */; };
 		63020F142761AD3C0025B7DD /* QuizView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63020F132761AD3C0025B7DD /* QuizView.storyboard */; };
 		632D48E22761C99F001B546F /* OperatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D48E12761C99F001B546F /* OperatorType.swift */; };
+		632D48E92762F908001B546F /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D48E82762F908001B546F /* Extension+UIButton.swift */; };
 		63B508AB27605EFA005E53C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508AA27605EFA005E53C3 /* AppDelegate.swift */; };
 		63B508AD27605EFA005E53C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508AC27605EFA005E53C3 /* SceneDelegate.swift */; };
 		63B508AF27605EFA005E53C3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508AE27605EFA005E53C3 /* ListViewController.swift */; };
@@ -41,6 +42,7 @@
 		63020F112761AD010025B7DD /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		63020F132761AD3C0025B7DD /* QuizView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizView.storyboard; sourceTree = "<group>"; };
 		632D48E12761C99F001B546F /* OperatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorType.swift; sourceTree = "<group>"; };
+		632D48E82762F908001B546F /* Extension+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIButton.swift"; sourceTree = "<group>"; };
 		63B508A727605EFA005E53C3 /* Simple_UITalbeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simple_UITalbeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B508AA27605EFA005E53C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63B508AC27605EFA005E53C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				63020F0B276134410025B7DD /* Extension+UITableView.swift */,
+				632D48E82762F908001B546F /* Extension+UIButton.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				63020F122761AD010025B7DD /* QuizViewController.swift in Sources */,
 				63020F072760A6070025B7DD /* ResultViewController.swift in Sources */,
 				63B508AB27605EFA005E53C3 /* AppDelegate.swift in Sources */,
+				632D48E92762F908001B546F /* Extension+UIButton.swift in Sources */,
 				63B508AD27605EFA005E53C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
