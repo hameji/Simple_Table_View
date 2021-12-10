@@ -53,11 +53,18 @@ class QuizViewController: UIViewController {
         showView.isHidden = true
         answerView.isHidden = false
         answerLabel.text = currentOperator?.name
+        if operators.isEmpty {
+            nextButton.setTitle("終了", for: .normal)
+        }
     }
     
     @IBAction func nextQuizButtonPressed(_ sender: Any) {
         showView.isHidden = false
         answerView.isHidden = true
+        guard !operators.isEmpty else {
+            showCompletionAlert()
+            return
+        }
         setOperator()
         setProgress()
         setQuestion()
@@ -99,5 +106,13 @@ class QuizViewController: UIViewController {
         operatorView.isHidden = !images.result
         resultView.isHidden = !images.result
     }
+    
+    private func showCompletionAlert() {
+        let alert = UIAlertController(title: "完了しました", message: "お疲れ様でした。", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
+            self?.navigationController?.popViewController(animated: true)
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
 }
