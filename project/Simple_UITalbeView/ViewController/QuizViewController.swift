@@ -53,6 +53,9 @@ class QuizViewController: UIViewController {
         showView.isHidden = true
         answerView.isHidden = false
         answerLabel.text = currentOperator?.name
+        if operators.isEmpty {
+            nextButton.setTitle("終了", for: .normal)
+        }
     }
     
     @IBAction func nextQuizButtonPressed(_ sender: Any) {
