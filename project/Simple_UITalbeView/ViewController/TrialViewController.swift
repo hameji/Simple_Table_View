@@ -9,6 +9,9 @@ import UIKit
 
 class TrialViewController: UIViewController {
 
+    @IBOutlet weak var diagramButton: UIButton!
+    @IBOutlet weak var compatibleButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

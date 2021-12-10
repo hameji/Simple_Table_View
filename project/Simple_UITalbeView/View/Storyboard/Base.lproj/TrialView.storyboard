@@ -44,17 +44,37 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="85.5"/>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                             </view>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxN-Tl-BbC">
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyD-xl-d5B">
                                                                                 <rect key="frame" x="0.0" y="85.5" width="414" height="86"/>
-                                                                                <state key="normal" title="マーブルダイアグラム問題"/>
-                                                                                <connections>
-                                                                                    <action selector="pressedDiagramButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Eaw-Lx-vhv"/>
-                                                                                </connections>
-                                                                            </button>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHD-Fl-Edr">
+                                                                                <subviews>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxN-Tl-BbC">
+                                                                                        <rect key="frame" x="115" y="28" width="184" height="30"/>
+                                                                                        <state key="normal" title="マーブルダイアグラム問題"/>
+                                                                                        <connections>
+                                                                                            <action selector="pressedDiagramButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Eaw-Lx-vhv"/>
+                                                                                        </connections>
+                                                                                    </button>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="VxN-Tl-BbC" firstAttribute="centerX" secondItem="JyD-xl-d5B" secondAttribute="centerX" id="A5t-BQ-5G1"/>
+                                                                                    <constraint firstItem="VxN-Tl-BbC" firstAttribute="centerY" secondItem="JyD-xl-d5B" secondAttribute="centerY" id="WqF-RD-8Pz"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h28-pM-I7E">
                                                                                 <rect key="frame" x="0.0" y="171.5" width="414" height="85.5"/>
-                                                                                <state key="normal" title="文章問題"/>
-                                                                            </button>
+                                                                                <subviews>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHD-Fl-Edr">
+                                                                                        <rect key="frame" x="176" y="27.5" width="62" height="30"/>
+                                                                                        <state key="normal" title="文章問題"/>
+                                                                                    </button>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="IHD-Fl-Edr" firstAttribute="centerY" secondItem="h28-pM-I7E" secondAttribute="centerY" id="hlr-wZ-UXd"/>
+                                                                                    <constraint firstItem="IHD-Fl-Edr" firstAttribute="centerX" secondItem="h28-pM-I7E" secondAttribute="centerX" id="tGd-Bw-d2g"/>
+                                                                                </constraints>
+                                                                            </view>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAk-2i-QPl">
                                                                                 <rect key="frame" x="0.0" y="257" width="414" height="85.5"/>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -113,6 +133,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="EGD-HS-lWm"/>
                     <connections>
+                        <outlet property="compatibleButton" destination="IHD-Fl-Edr" id="KxX-RR-sP1"/>
+                        <outlet property="diagramButton" destination="VxN-Tl-BbC" id="rN4-ws-H1L"/>
                         <segue destination="h7l-qR-I1z" kind="showDetail" id="Q0k-JF-pdC"/>
                     </connections>
                 </viewController>
