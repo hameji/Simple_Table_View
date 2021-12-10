@@ -11,6 +11,7 @@ class TrialViewController: UIViewController {
 
     @IBOutlet weak var diagramButton: UIButton!
     @IBOutlet weak var compatibleButton: UIButton!
+    @IBOutlet weak var functionButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +20,10 @@ class TrialViewController: UIViewController {
     }
     
     private func setUI() {
+        title = "演習問題"
         diagramButton.fillStyle(color: .blue)
         compatibleButton.fillStyle(color: .blue)
+        functionButton.fillStyle(color: .blue)
     }
     
     @IBAction func pressedDiagramButton(_ sender: Any) {
