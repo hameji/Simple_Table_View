@@ -12,6 +12,7 @@ struct Operator {
     let type: OperatorType
     let images: DiagramImages?
     let swiftCompatible: Bool
+    let functions: [String]?
     let urlString: String
 }
 
