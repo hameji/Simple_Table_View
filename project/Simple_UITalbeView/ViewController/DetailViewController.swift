@@ -28,6 +28,7 @@ class DetailViewController: UIViewController {
             return
         }
         let request = URLRequest(url: url)
+        progressView.show()
         webView.load(request)
     }
 
@@ -35,14 +36,20 @@ class DetailViewController: UIViewController {
 
 extension DetailViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        print("didStartProvisionalNavigation")
+        progressView.show()
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("didFinish")
+        progressView.dismiss()
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        print("didFail")
+        progressView.show()
+        let alert = UIAlertController(title: "読み込みに失敗しました", message: nil, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
+            self?.navigationController?.popViewController(animated: true)
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
 }
