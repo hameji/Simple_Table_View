@@ -20,21 +20,21 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="406"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rxswift" translatesAutoresizingMaskIntoConstraints="NO" id="Okk-4b-ktR">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="286"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="306"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="問題に" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMg-is-bMc">
-                                        <rect key="frame" x="0.0" y="286" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="306" width="414" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="SAJ-Lz-avA"/>
+                                            <constraint firstAttribute="height" constant="50" id="SAJ-Lz-avA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="チャンレジしてみよう！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktB-fb-tb4">
-                                        <rect key="frame" x="0.0" y="346" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="356" width="414" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="sdc-cu-YYh"/>
+                                            <constraint firstAttribute="height" constant="50" id="sdc-cu-YYh"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <nil key="textColor"/>
