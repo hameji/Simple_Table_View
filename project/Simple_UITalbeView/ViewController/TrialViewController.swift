@@ -49,4 +49,12 @@ class TrialViewController: UIViewController {
         navigationController?.pushViewController(compatibleVC, animated: true)
     }
     
+    @IBAction func pressFunctionButton(_ sender: Any) {
+        let functionStoryboard = UIStoryboard.init(name: "QuizFunctionView", bundle: nil)
+        guard let functionVC = functionStoryboard.instantiateInitialViewController() as? QuizFunctionViewController else {
+            return
+        }
+        navigationController?.pushViewController(functionVC, animated: true)
+    }
+    
 }
