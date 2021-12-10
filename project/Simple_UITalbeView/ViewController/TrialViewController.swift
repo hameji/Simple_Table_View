@@ -15,6 +15,12 @@ class TrialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setUI()
+    }
+    
+    private func setUI() {
+        diagramButton.fillStyle(color: .blue)
+        compatibleButton.fillStyle(color: .blue)
     }
     
     @IBAction func pressedDiagramButton(_ sender: Any) {
