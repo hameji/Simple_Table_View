@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "result_merge.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "result_merge.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

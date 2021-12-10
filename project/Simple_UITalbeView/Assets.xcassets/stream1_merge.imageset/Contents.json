@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "stream1_merge.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "stream1_merge.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
