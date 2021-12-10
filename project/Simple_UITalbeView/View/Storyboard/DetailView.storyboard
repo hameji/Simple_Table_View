@@ -19,17 +19,34 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvg-C9-S7k">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6u-CQ-Eeu">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f6u-CQ-Eeu">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                                         <subviews>
-                                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EkK-M3-dQ6">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GbB-d0-zOZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
-                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <wkWebViewConfiguration key="configuration">
-                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                                    <wkPreferences key="preferences"/>
-                                                </wkWebViewConfiguration>
-                                            </wkWebView>
+                                                <subviews>
+                                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="3xN-y6-LXP">
+                                                        <rect key="frame" x="188.5" y="390.5" width="37" height="37"/>
+                                                    </activityIndicatorView>
+                                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EkK-M3-dQ6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <wkWebViewConfiguration key="configuration">
+                                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                            <wkPreferences key="preferences"/>
+                                                        </wkWebViewConfiguration>
+                                                    </wkWebView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="EkK-M3-dQ6" secondAttribute="trailing" id="1E3-22-Apm"/>
+                                                    <constraint firstItem="3xN-y6-LXP" firstAttribute="centerX" secondItem="GbB-d0-zOZ" secondAttribute="centerX" id="Llu-ZI-Hpr"/>
+                                                    <constraint firstAttribute="bottom" secondItem="EkK-M3-dQ6" secondAttribute="bottom" id="NZ4-gL-1Rq"/>
+                                                    <constraint firstItem="EkK-M3-dQ6" firstAttribute="leading" secondItem="GbB-d0-zOZ" secondAttribute="leading" id="jZF-tn-z5D"/>
+                                                    <constraint firstItem="EkK-M3-dQ6" firstAttribute="top" secondItem="GbB-d0-zOZ" secondAttribute="top" id="ocf-TT-n4j"/>
+                                                    <constraint firstItem="3xN-y6-LXP" firstAttribute="centerY" secondItem="GbB-d0-zOZ" secondAttribute="centerY" id="xFX-lA-S9o"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -55,6 +72,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressView" destination="3xN-y6-LXP" id="Sct-vm-3Hj"/>
                         <outlet property="webView" destination="EkK-M3-dQ6" id="nSt-mR-nSg"/>
                     </connections>
                 </viewController>

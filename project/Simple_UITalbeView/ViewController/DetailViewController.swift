@@ -16,6 +16,8 @@ class DetailViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var progressView: UIActivityIndicatorView!
+    
     var _operator: Operator!
     
     override func viewDidLoad() {
