@@ -8,6 +8,10 @@
 import UIKit
 
 class TrialViewController: UIViewController {
+    
+    @IBOutlet weak var functionView: UIView!
+    @IBOutlet weak var workAroundView: UIView!
+    @IBOutlet weak var exerciseView: UIView!
 
     @IBOutlet weak var diagramButton: UIButton!
     @IBOutlet weak var compatibleButton: UIButton!
@@ -24,6 +28,9 @@ class TrialViewController: UIViewController {
         diagramButton.fillStyle(color: .blue)
         compatibleButton.fillStyle(color: .blue)
         functionButton.fillStyle(color: .blue)
+        
+        workAroundView.isHidden = true
+        exerciseView.isHidden = true
     }
     
     @IBAction func pressedDiagramButton(_ sender: Any) {
