@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -86,7 +86,6 @@
 				485D4E10872539CA1715A2ED /* Pods-Simple_UITalbeView.debug.xcconfig */,
 				69CD7E52053AA861E0B54228 /* Pods-Simple_UITalbeView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
