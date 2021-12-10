@@ -66,8 +66,9 @@ class QuizViewController: UIViewController {
     private func setOperator() {
         guard let quizOperator = operators.randomElement(),
               let selectedIndex = operators.firstIndex(where: { $0.name == quizOperator.name }) else { return }
-        currentOperator = quizOperator
-        operators.remove(at: selectedIndex)
+        let operator1 = operators[0]
+        currentOperator = operator1 //quizOperator
+        operators.remove(at: 0) // selectedIndex)
     }
     
     private func setProgress() {
@@ -80,15 +81,23 @@ class QuizViewController: UIViewController {
     private func setQuestion() {
         answerView.isHidden = true
         print(currentOperator?.name.lowercased() ?? "nil")
-        guard let quizOperator = currentOperator else { return }
-        stream1ImageView.image = quizOperator.images.stream1 ? UIImage(named: "stream1_" + quizOperator.name.lowercased() + ".png") : nil
-        stream2ImageView.image = quizOperator.images.stream2 ? UIImage(named: "stream2_" + quizOperator.name.lowercased() + ".png") : nil
-        operatorImageView.image = quizOperator.images.opreator ? UIImage(named: "operator_x.png") : nil
-        resultImageView.image = quizOperator.images.result ? UIImage(named: "result_" + quizOperator.name.lowercased() + ".png") : nil
+        guard let quizOperator = currentOperator,
+              let images = quizOperator.images else { return }
+        var name = quizOperator.name.lowercased()
+        if name.contains("(") {
+            let compart = name.split(separator: "(")
+            name = String(compart[0])
+        }
+        let fileName = name + ".png"
+        stream1ImageView.image = images.stream1 ? UIImage(named: "stream1_" + fileName) : nil
+        stream2ImageView.image = images.stream2 ? UIImage(named: "stream2_" + fileName) : nil
+        operatorImageView.image = images.opreator ? UIImage(named: "operator_x.png") : nil
+        resultImageView.image = images.result ? UIImage(named: "result_" + fileName) : nil
         // 表示
-        stream1View.isHidden = !quizOperator.images.stream1
-        stream2View.isHidden = !quizOperator.images.stream2
-        operatorView.isHidden = !quizOperator.images.result
-        resultView.isHidden = !quizOperator.images.result
+        stream1View.isHidden = !images.stream1
+        stream2View.isHidden = !images.stream2
+        operatorView.isHidden = !images.result
+        resultView.isHidden = !images.result
+    }
     }
 }
