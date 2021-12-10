@@ -21,6 +21,7 @@
 		632D48EB2762FF98001B546F /* QuizCompatibleView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632D48EA2762FF98001B546F /* QuizCompatibleView.storyboard */; };
 		632D48ED27630221001B546F /* QuizCompatibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D48EC27630221001B546F /* QuizCompatibleViewController.swift */; };
 		632D48EF27636123001B546F /* Extension+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D48EE27636123001B546F /* Extension+UIActivityIndicatorView.swift */; };
+		632D48F127636745001B546F /* QuizFunctionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632D48F027636745001B546F /* QuizFunctionView.storyboard */; };
 		63B508AB27605EFA005E53C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508AA27605EFA005E53C3 /* AppDelegate.swift */; };
 		63B508AD27605EFA005E53C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508AC27605EFA005E53C3 /* SceneDelegate.swift */; };
 		63B508AF27605EFA005E53C3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B508AE27605EFA005E53C3 /* ListViewController.swift */; };
@@ -51,6 +52,7 @@
 		632D48EA2762FF98001B546F /* QuizCompatibleView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuizCompatibleView.storyboard; sourceTree = "<group>"; };
 		632D48EC27630221001B546F /* QuizCompatibleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCompatibleViewController.swift; sourceTree = "<group>"; };
 		632D48EE27636123001B546F /* Extension+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
+		632D48F027636745001B546F /* QuizFunctionView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuizFunctionView.storyboard; sourceTree = "<group>"; };
 		63B508A727605EFA005E53C3 /* Simple_UITalbeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simple_UITalbeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B508AA27605EFA005E53C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63B508AC27605EFA005E53C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				63020EF427609DA20025B7DD /* TrialView.storyboard */,
 				63020F132761AD3C0025B7DD /* QuizView.storyboard */,
 				632D48EA2762FF98001B546F /* QuizCompatibleView.storyboard */,
+				632D48F027636745001B546F /* QuizFunctionView.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				632D48EB2762FF98001B546F /* QuizCompatibleView.storyboard in Resources */,
+				632D48F127636745001B546F /* QuizFunctionView.storyboard in Resources */,
 				63B508B727605EFD005E53C3 /* LaunchScreen.storyboard in Resources */,
 				63020EFE2760A2240025B7DD /* ListView.storyboard in Resources */,
 				63020F142761AD3C0025B7DD /* QuizView.storyboard in Resources */,
