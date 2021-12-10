@@ -93,6 +93,9 @@
                                                                                             <constraint firstAttribute="height" constant="45" id="QQ5-HB-pvq"/>
                                                                                         </constraints>
                                                                                         <state key="normal" title="関数名問題"/>
+                                                                                        <connections>
+                                                                                            <action selector="pressFunctionButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vPr-GS-8nX"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
