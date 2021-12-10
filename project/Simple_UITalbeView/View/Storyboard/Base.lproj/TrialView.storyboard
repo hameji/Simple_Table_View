@@ -48,7 +48,10 @@
                                                                                 <rect key="frame" x="0.0" y="85.5" width="414" height="86"/>
                                                                                 <subviews>
                                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxN-Tl-BbC">
-                                                                                        <rect key="frame" x="115" y="28" width="184" height="30"/>
+                                                                                        <rect key="frame" x="40" y="20.5" width="334" height="45"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="45" id="6g9-A9-N8l"/>
+                                                                                        </constraints>
                                                                                         <state key="normal" title="マーブルダイアグラム問題"/>
                                                                                         <connections>
                                                                                             <action selector="pressedDiagramButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Eaw-Lx-vhv"/>
@@ -58,6 +61,8 @@
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                                 <constraints>
                                                                                     <constraint firstItem="VxN-Tl-BbC" firstAttribute="centerX" secondItem="JyD-xl-d5B" secondAttribute="centerX" id="A5t-BQ-5G1"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="VxN-Tl-BbC" secondAttribute="trailing" constant="40" id="JoA-Gb-Swn"/>
+                                                                                    <constraint firstItem="VxN-Tl-BbC" firstAttribute="leading" secondItem="JyD-xl-d5B" secondAttribute="leading" constant="40" id="SLg-yO-eXv"/>
                                                                                     <constraint firstItem="VxN-Tl-BbC" firstAttribute="centerY" secondItem="JyD-xl-d5B" secondAttribute="centerY" id="WqF-RD-8Pz"/>
                                                                                 </constraints>
                                                                             </view>
@@ -65,13 +70,18 @@
                                                                                 <rect key="frame" x="0.0" y="171.5" width="414" height="85.5"/>
                                                                                 <subviews>
                                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHD-Fl-Edr">
-                                                                                        <rect key="frame" x="176" y="27.5" width="62" height="30"/>
+                                                                                        <rect key="frame" x="40" y="20" width="334" height="45"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="45" id="gHG-ud-fg5"/>
+                                                                                        </constraints>
                                                                                         <state key="normal" title="文章問題"/>
                                                                                     </button>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                                 <constraints>
+                                                                                    <constraint firstAttribute="trailing" secondItem="IHD-Fl-Edr" secondAttribute="trailing" constant="40" id="by4-X7-S42"/>
                                                                                     <constraint firstItem="IHD-Fl-Edr" firstAttribute="centerY" secondItem="h28-pM-I7E" secondAttribute="centerY" id="hlr-wZ-UXd"/>
+                                                                                    <constraint firstItem="IHD-Fl-Edr" firstAttribute="leading" secondItem="h28-pM-I7E" secondAttribute="leading" constant="40" id="huj-Kg-QXd"/>
                                                                                     <constraint firstItem="IHD-Fl-Edr" firstAttribute="centerX" secondItem="h28-pM-I7E" secondAttribute="centerX" id="tGd-Bw-d2g"/>
                                                                                 </constraints>
                                                                             </view>
