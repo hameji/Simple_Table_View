@@ -16,20 +16,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMg-is-bMc">
-                                <rect key="frame" x="111.5" y="204.5" width="191" height="41"/>
-                                <string key="text">問題に
-チャレンジしてみよう！</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vVO-VV-BNc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="406"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rxswift" translatesAutoresizingMaskIntoConstraints="NO" id="Okk-4b-ktR">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="286"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="問題に" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMg-is-bMc">
+                                        <rect key="frame" x="0.0" y="286" width="414" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="SAJ-Lz-avA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="チャンレジしてみよう！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktB-fb-tb4">
+                                        <rect key="frame" x="0.0" y="346" width="414" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="sdc-cu-YYh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tMg-is-bMc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="F6K-nG-s53"/>
-                            <constraint firstItem="tMg-is-bMc" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="ulv-5x-hib"/>
+                            <constraint firstItem="vVO-VV-BNc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="KQI-Fh-ak9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="vVO-VV-BNc" secondAttribute="bottom" id="gDr-Lz-EXr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vVO-VV-BNc" secondAttribute="trailing" id="jzW-fV-gJR"/>
+                            <constraint firstItem="vVO-VV-BNc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="m2F-85-WvO"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="450"/>
@@ -40,6 +60,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="rxswift" width="299.5" height="140"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
